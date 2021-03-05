@@ -15,5 +15,14 @@ namespace MindBoxLib
             double p = (a + b + c) / 2.0;
             return Math.Sqrt(p*(p-a)*(p-b)*(p-c));
         }
+        /*
+        SQL запрос из второго задания находится здесь:
+
+        select product.product_name, category.category_name
+        from product
+        left join category
+        on product.category_id = category.category_id;
+
+         */
     }
 }
