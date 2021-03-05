@@ -1,4 +1,5 @@
 ﻿using System;
+using MindBoxLib;
 
 namespace MindBox
 {
@@ -6,7 +7,11 @@ namespace MindBox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double areaCircle = CalcArea.Circle(2);
+            double areaTriangle = CalcArea.Triangle(5, 5, 5);
+            Console.WriteLine(areaCircle);
+            Console.WriteLine(areaTriangle);
+            Console.ReadKey();
         }
     }
 }
