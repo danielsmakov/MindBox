@@ -2,6 +2,7 @@
 
 namespace MindBoxLib
 {
+    // Это класс, содержащий методы для расчета площадей круга и произвольного треугольника
     public class CalcArea
     {
         public static double Circle(double r)
@@ -10,6 +11,7 @@ namespace MindBoxLib
         }
         public static double Triangle(double a, double b, double c)
         {
+            // Расчет площади произвольного треугольника по формуле Герона
             double p = (a + b + c) / 2.0;
             return Math.Sqrt(p*(p-a)*(p-b)*(p-c));
         }
